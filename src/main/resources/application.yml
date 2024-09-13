@@ -1,0 +1,15 @@
+datasource:
+  primary:
+    jdbcUrl: jdbc:postgresql://localhost:5441/db
+    username: dbuser1
+    password: dbpass1
+    jdbcDriver: org.postgresql.Driver
+  secondary:
+    jdbcUrl: jdbc:postgresql://localhost:5442/db
+    username: dbuser2
+    password: dbpass2
+    jdbcDriver: org.postgresql.Driver
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.postgresql
+    generate-ddl: true
